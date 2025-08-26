@@ -1,0 +1,163 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #b8860b;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header button {
+  background: #fff;
+  color: #b8860b;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+header button:hover {
+  background: #b8860b;
+  color: white;
+  border-color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url("https://i.ibb.co/5FRwNbX/jewelry-bg.jpg") no-repeat center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.product-card p {
+  padding: 0 10px 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #b8860b;
+  font-size: 1rem;
+  padding: 0 10px 15px;
+}
+
+/* Owner Panel */
+#ownerPanel {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
+}
+
+#ownerPanel h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #b8860b;
+}
+
+/* Forms */
+input, textarea, select {
+  width: 100%;
+  margin: 6px 0 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button.primary {
+  background: #b8860b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.primary:hover {
+  background: #a67c00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #aaa;
+  padding: 20px;
+  margin-top: 40px;
+}
